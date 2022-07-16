@@ -115,7 +115,9 @@ body{
     font-size: 19px;
 }
 
-
+.lista-equipo ul .card-jugador:hover .datos-jugador h3 {  
+    text-decoration: underline;
+   }
 
 
 
@@ -127,6 +129,10 @@ body{
     font-size: 50px;
 }
 
+.lista-equipo ul .card-jugador:hover .datos-jugador .numero-casaca{ 
+  
+    color: rgb(4, 85, 117);
+}
 
 
 
