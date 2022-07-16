@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Poppins:ital,wght@0,400;0,800;1,100;1,200;1,400;1,500&family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins';
+}
+
+/* INICIO DE LA INTRO DE LA TIENDA */
+.contenedor-img {
+                                                                    
+    
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 345px;
+    background-image: url(../img-inicio-tienda/fondo.jpg);
+    background-size: 100%;
+    
+    
+}
+
+.contenedor-img .titulo-en-img{
+   float: left;
+   padding-left: 0;
+   text-transform: uppercase;
+   text-align: center;
+   margin-right: 100px;
+   width: 50%;
+  
+}
+
+.contenedor-img .titulo-en-img h1{
+  padding-right: 15px;
+  margin-left: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-top: 15%;
+  
+}
+
+.contenedor-img .titulo-en-img span{
+    font-size: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1bbfd4;
+    padding: 10px;
+    color: rgb(9, 8, 8);
+    transition: all 0.9s;   
+}
+
+
+
+
+
+.productos-referencia{
+    margin-left: 155px;
+    margin-right: 155px;
+}
+.productos-referencia h2{
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    color: #00BCD4;
+    font-size: 35px;
+}
+.productos-referencia img{
+    width: 100%;
+}
+
+/* FIN DE LA INTRO A LA TIENDA */
+
+
+/* INICIO DELA TIENDA */
+.nuestra-tienda-contenedor{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 65px ;
+
+}
+
+.nuestra-tienda-contenedor .titulo-tienda{
+    width: 100%;
+
+}
+
+.nuestra-tienda-contenedor .titulo-tienda h2{
+  margin: 20px;
+  padding: 10px;
+  font-size: 35px;
+  position: relative;
+  color:#00BCD4
+}
+
+.nuestra-tienda-contenedor .contenedor-tienda{
+    display: flex;
+    width: 100%;
+    flex-flow:row wrap ;
+  justify-content: space-evenly;
+    margin: 10px;
+    padding: 60px;
+}
+
+.nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos{
+    text-align: center;
+    line-height: 25px;
+    margin-bottom:80px ;
+    transition: all 0.9s;
+    margin-right: 5px;
+    padding: 4px;   
+ 
+    overflow: hidden; 
+    margin-top: 30px;
+}
+
+
+
+
+
+.cards-tienda-productos img{
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+.cards-tienda-productos h3{
+    color: #00BCD4;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.cards-tienda-productos a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500px;
+    font-size:20px ;
+    
+}
+
+/* FIN DE LA TIENDA */
+
+
+
+
+
+
+
+
+    
+   

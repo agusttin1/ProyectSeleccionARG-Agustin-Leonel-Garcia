@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Poppins:ital,wght@0,400;0,800;1,100;1,200;1,400;1,500&family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+
+/* CONTENEDOR DEL EQUIPO */
+
+.contenedor-titulo{
+    box-shadow: 2px 1px 10px skyblue;
+}
+.contenedor-titulo h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.plantilla-content{
+    margin: 60px;
+    width: auto;
+    height: auto;
+}
+.container-equipo{
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titulo{
+    margin: 25px;
+}
+
+.container-equipo .titulo h2{
+    margin: 20px;
+  padding: 10px;
+  font-size: 35px;
+  position: relative;
+  color:#00BCD4;
+  font-weight: 800;
+}
+
+.lista-equipo{
+    width: 100%;
+    margin-left: 80px;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.lista-equipo ul{
+    display: flex;
+    list-style-type: none;
+    width:100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    
+   
+    
+}
+
+.lista-equipo ul .card-jugador{
+ 
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 50px;
+    transition: all 0.5s;
+    text-align: center;
+    width: 240px;
+    margin-right: 10px;
+    background-color: rgb(190, 228, 243);
+    box-shadow: 2px 4px 10px black;
+
+    
+}
+
+.lista-equipo ul .card-jugador:hover{ 
+    
+    background-color:skyblue;
+    transform:scale(1.1) 
+
+}
+
+.lista-equipo ul .card-jugador img{
+    height: 200px; 
+}
+
+
+
+.lista-equipo ul .card-jugador .datos-jugador{
+    background-color: white;
+   padding-left: 10px;
+   padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.lista-equipo ul .card-jugador .datos-jugador h3{
+    text-align: justify;
+    font-weight: 200px;
+    justify-content: flex-end;
+    font-size: 19px;
+}
+
+
+
+
+
+
+.lista-equipo ul .card-jugador .datos-jugador .numero-casaca{
+    margin-right: 10px;
+    color: skyblue;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIN DEL CONTENEDOR DEL EQUIPO */
