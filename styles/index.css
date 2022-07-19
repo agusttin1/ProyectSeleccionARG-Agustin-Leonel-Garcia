@@ -81,7 +81,7 @@ body{
 
 /* INICIO VIDEO */
 .video-inicio {
-  
+
   gap: 10px;
   height: auto;
   position:relative;
@@ -93,7 +93,7 @@ body{
   text-align: center;
   padding: 50px;
   margin: 0;
-  color: rgb(11, 10, 10);
+  color:#00BCD4;
 }
 
 .video-inicio video {
@@ -172,7 +172,7 @@ body{
 
 .contenedor-noticias .card-noticias p {
   padding: 0 24px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 299;
   color: rgb(0, 0, 0);
 }
@@ -181,7 +181,8 @@ body{
   color: gray;
   text-decoration: none;
   font-weight: 500;
-  align-items: baseline;
+  padding: 20px;
+  margin-top: 10px;
  
 }
 
@@ -191,7 +192,7 @@ body{
 .inicio-tienda-body{
   width: 100%;
   height: 100%;
-  background-color:#156fc9;
+  background-color:#4ba9e9;
   color: rgb(244, 242, 242);
   margin: 0;
   padding: 0;
@@ -207,11 +208,12 @@ body{
   padding: 10px;
   font-size: 35px;
   position: relative;
+  color: white;
 }
 
 .inicio-tienda-body .titulo-producto-info p{
 float: right;
-margin-right: 10px;
+margin-right: 15px;
 margin-bottom: 0;
 transition: all 0.5s;
 position: relative;
@@ -226,13 +228,14 @@ margin-bottom: 32px;
 
 .inicio-tienda-body .titulo-producto-info p:hover{
   transform:scale(1.1);
+  
 }
 
 
 
 .inicio-tienda-body .titulo-producto-info p a{
   text-decoration: none;
-  color: rgb(0, 0, 0);
+color: black;
 }
 
 
@@ -294,6 +297,15 @@ margin-bottom: 32px;
   background-color: white;
 }
 
+.contenedor-productos .card-productos  .datos-producto h3{
+  font-size: 16px;
+  color: white;
+}
+
+
+.contenedor-productos .card-productos  .datos-producto h4{
+  color: white;
+}
 
 
 /* FIN DE TIENDA(INDEX) */
