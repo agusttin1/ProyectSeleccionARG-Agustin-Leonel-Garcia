@@ -10,144 +10,178 @@ body{
   font-family: 'Poppins';
 }
 
-/* INICIO DE LA INTRO DE LA TIENDA */
-.contenedor-img {
-                                                                    
-    
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 345px;
-    background-image: url(../images/img-inicio-tienda/fondo.jpg);
-    background-size: 100%;
-    
-    
-}
-
-.contenedor-img .titulo-en-img{
-   float: left;
-   padding-left: 0;
-   text-transform: uppercase;
-   text-align: center;
-   margin-right: 100px;
-   width: 50%;
-  
-}
-
-.contenedor-img .titulo-en-img h1{
-  padding-right: 15px;
-  margin-left: 10px;
-  font-size: 20px;
-  margin-bottom: 20px;
-  padding-top: 15%;
-  
-}
-
-.contenedor-img .titulo-en-img span{
-    font-size: 15px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #1bbfd4;
-    padding: 10px;
-    color: rgb(9, 8, 8);
-    transition: all 0.9s;   
-}
-
-.contenedor-img .titulo-en-img span:hover{  
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2)
-
-}
-
-
-
-.productos-referencia{
-    margin-left: 155px;
-    margin-right: 155px;
-}
-.productos-referencia h2{
-    text-align: center;
-    padding: 10px;
-    margin: 15px;
-    color: #00BCD4;
-    font-size: 35px;
-}
-.productos-referencia img{
-    width: 100%;
-}
-
-/* FIN DE LA INTRO A LA TIENDA */
-
-
-/* INICIO DELA TIENDA */
-.nuestra-tienda-contenedor{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: 65px ;
-
-}
-
-.nuestra-tienda-contenedor .titulo-tienda{
-    width: 100%;
-
-}
-
-.nuestra-tienda-contenedor .titulo-tienda h2{
-  margin: 20px;
-  padding: 10px;
-  font-size: 35px;
-  position: relative;
-  color:#00BCD4
-}
-
-.nuestra-tienda-contenedor .contenedor-tienda{
-    display: flex;
-    width: 100%;
-    flex-flow:row wrap ;
-  justify-content: space-evenly;
-    margin: 10px;
-    padding: 60px;
-}
-
-.nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos{
-    text-align: center;
-    line-height: 25px;
-    margin-bottom:80px ;
-    transition: all 0.9s;
-    margin-right: 5px;
-    padding: 4px;   
+.container-img{
+    width: auto;
+    height: auto;
+ }
+ .container-img img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
  
-    overflow: hidden; 
-    margin-top: 30px;
+ .container-img .titulo-en-img{
+    float: left;
+    padding-left: 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    top: 15%;
+    position: absolute;
+ }
+ 
+ .container-img .titulo-en-img h1{
+   padding-right: 15px;
+   margin-left: 10px;
+   font-size: 20px;
+   margin-bottom: 20px;
+   padding-top: 15%;
+   
+ }
+ 
+ .container-img .titulo-en-img span{
+     font-size: 15px;
+     border-radius: 10px;
+     overflow: hidden;
+     background-color: #1bbfd4;
+     padding: 10px;
+     color: rgb(9, 8, 8);
+     transition: all 0.9s; 
+     cursor: pointer;  
+ }
+ .container-img .titulo-en-img span:hover{  
+     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+ }
+ .productos-referencia h2{
+     text-align: center;
+     padding: 10px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     color: #00BCD4;
+     font-size: 35px;
+ }
+ .productos-referencia img{
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+ }
+ 
+ /* FIN DE LA INTRO A LA TIENDA */
+ 
+ /* INICIO DELA TIENDA */
+ .nuestra-tienda-contenedor{
+    height: auto;
+ 
+ }
+ 
+ .nuestra-tienda-contenedor .titulo-tienda h2{
+   margin: 20px;
+   padding: 10px;
+   font-size: 35px;
+   position: relative;
+   color:#00BCD4
+ }
+ 
+ .nuestra-tienda-contenedor .contenedor-tienda{
+     margin: 10px;
+     padding: 60px;
+ }
+ 
+ .nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos{
+     text-align: center;
+     line-height: 25px;
+     margin-bottom:70px ;
+     transition: all 0.9s;
+     overflow: hidden;  
+ }
+ 
+ .nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos:hover{
+     transform: scale(1.1);
+ }
+ 
+ .cards-tienda-productos img{
+     height: 300px;
+     margin-bottom: 25px;
+ }
+ 
+ .cards-tienda-productos h3{
+     color: #00BCD4;
+     letter-spacing: 1px;
+     font-size: 18px;
+     margin-bottom: 5px;
+     
+ }
+ 
+ .cards-tienda-productos a{
+     text-decoration: none;
+     color: gray;
+     font-weight: 500px;
+     font-size:20px ;   
+ }
+ 
+
+ img{
+    height: 185px;
+
 }
 
-.nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos:hover{
-    transform: scale(1.1);
+
+
+
+.col-md-8{
+    justify-content: flex-end;
 }
 
-
-
-.cards-tienda-productos img{
-    height: 300px;
-    margin-bottom: 25px;
+.modal-body .card-model .talles-lista{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
 }
 
-.cards-tienda-productos h3{
-    color: #00BCD4;
-    letter-spacing: 1px;
-    font-size: 16px;
-    margin-bottom: 5px;
-    margin-top: 0;
+.talles-lista li{
+    border-radius: 5px;
+    border: #00BCD4 2px solid;
+    background-color: #00BCD4;
+    color: black;
+    padding: 5px;
 }
 
-.cards-tienda-productos a{
-    text-decoration: none;
-    color: gray;
-    font-weight: 500px;
-    font-size:20px ;
-    
+.talles-lista li:hover{
+ background-color: white;
+    cursor: pointer;
 }
+
+ @media only screen and (min-width:440px) and (max-width:600px){
+  
+     .container-img .titulo-en-img h1{
+         font-size: 14px;
+         font-weight: 700;
+         padding-top: 15px;
+     }
+     .container-img .titulo-en-img span{
+         font-size: 10px;
+         padding: 5px;
+         
+     }
+ 
+     .productos-referencia h2{
+         text-align: center;
+         font-size: 20px;
+     }
+     .nuestra-tienda-contenedor .titulo-tienda h2{
+         font-size: 20px;
+     }
+     .cards-tienda-productos img{
+         height: 240px;
+         margin-bottom: 25px;
+     }
+     .cards-tienda-productos h3{
+         font-size: 16px;
+     }
+     .cards-tienda-productos a{
+         font-size: 14px;
+     }
+ }
 
 /* FIN DE LA TIENDA */
 

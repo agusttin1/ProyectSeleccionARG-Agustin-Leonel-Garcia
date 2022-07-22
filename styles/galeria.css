@@ -20,6 +20,8 @@ margin: 20px;
   color:#00BCD4
 }
 
+
+
 .cont-de-img{
   width: 100%;
   max-width: 1100px;
@@ -77,14 +79,17 @@ grid-column: 3/4;
   position: relative;
   color: #00BCD4;
 }
+
 .cont-de-vid .videos{
   display: flex;
   justify-content: center;
   padding-left: 10%;
   margin: 5px;
+
 }
 .cont-de-vid .videos iframe{
     border-radius: 20px;  
+    margin-bottom: 20px;
 }
 
 /* FIN DE LOS VIDEOS */
@@ -100,62 +105,11 @@ grid-column: 3/4;
     padding: 0;
   }
   
-  .body-header{
-        grid-template-columns: repeat(4,100px);
-        display:grid;
-        gap: 10px;
-        height: 65px;
-        width: 100%; 
-       
-      }
-      .body-header .logo{
-        grid-column: 1/2;
-        position: absolute;
-        padding-left: 70px;
-        font-size: 14px;
-        justify-content: center;
-        width: 100%;
-        
-      }
-      
-      .body-header .logo img{
-        height: 60px;
-      }
-      
-      .navbar{
-      justify-content: center;
-      grid-column: 4/5;
-      margin: 0;
-      margin-left: 25px;
-      }
-
-    
-      
-      
-      .body-header .secciones-header{
-        display: grid;
-        grid-template-columns: repeat(4,100px);
-        gap: 10px;
-      }
-      
-      .body-header .secciones-header ul{
-        flex-direction: column;
-        top: 65px;
-        left: 0;
-        position: absolute;
-        z-index: 5;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        visibility: hidden;  /* FUTURO NAVBAR  , MIENTRAS OCULTO */
-        background-color: rgba(0, 0, 0, 0.8)
-      } 
-
-      
+   
     .head-pics h2{
       font-size: 22px;
       text-align: center;
+      color: white;
     }
     
 
@@ -195,6 +149,9 @@ grid-column: 3/4;
       text-align: center;
       font-size: 22px;
     }
+    .head-vids h2 .color-blanco-letra{
+      color: white;
+    }
     .cont-de-vid{
       display: flex;
       flex-direction: column;
@@ -220,8 +177,6 @@ grid-column: 3/4;
       justify-content:center;
       display: grid;
       grid-template-columns: repeat(3,200px);
-      
-    
     }
     
     .container-footer .logo{
@@ -267,45 +222,17 @@ grid-column: 3/4;
     margin: 0;
     padding: 0;
   }
-  
-  .body-header{
-        grid-template-columns: repeat(4,100px);
-        display:grid;
-        gap: 10px;
-        height: 75px;
-        width: 100%; 
-       
-      }
-      .body-header .logo{
-        grid-column: 1/2;
-        position: absolute;
-      padding-left: 85px;
-        font-size: 14px;
-        justify-content: center;
-        width: 100%;
-        
-      }
-      
-      .body-header .logo img{
-        height: 70px;
-      }
-      
-      .navbar{
-      justify-content: center;
-      grid-column: 4/5;
-      margin: 0;
-      margin-right: 25px;
-      }
-
-       .head-pics h2{text-align: center;
-      font-size: 23.5px;}
+       .head-pics h2{
+      text-align: center;
+      font-size: 23.5px;
+      color: white;
+    }
     .cont-de-img{
       display: flex;
       flex-flow: row wrap;
       width: 100%;
       justify-content: space-evenly;
-  
-      
+ 
     }
 
     .cont-de-img .box-img img{
@@ -313,10 +240,13 @@ grid-column: 3/4;
       height: 200px;
     }
 
-
     .head-vids h2{
       text-align: center;
       font-size: 23.5px;
+    }
+
+    .head-vids h2 .color-blanco-letra-2{
+      color: white;
     }
     .cont-de-vid{
       margin: 0;
@@ -327,37 +257,7 @@ grid-column: 3/4;
       width: 280;
       margin: 0;
       padding: 0;
-    }
-
-    
-      
-      
-      .body-header .secciones-header{
-        display: grid;
-        grid-template-columns: repeat(4,100px);
-        gap: 10px;
-      }
-      
-      .body-header .secciones-header ul{
-        flex-direction: column;
-        top: 65px;
-        left: 0;
-        position: absolute;
-        z-index: 5;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        visibility: hidden;  /* FUTURO NAVBAR  , MIENTRAS OCULTO */
-        background-color: rgba(0, 0, 0, 0.8)
-      } 
-
-      
-    .head-pics h2{
-      font-size: 22px;
-      text-align: center;
-    }
-    
+    } 
   
 }
   

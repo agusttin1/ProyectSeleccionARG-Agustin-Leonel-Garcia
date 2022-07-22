@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/tienda.css">
     <link rel="shortcut icon" href="../log/icono-pestaña.png">
@@ -12,121 +13,191 @@
 </head>
 <body>
 <!-- INICIO HEADER -->
-    <header class="body-header">
-        <a href="" class="logo">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+     
+      
+         <a href="../index.html" class="logo navbar-brand">
           <img src="../log/logoweb.png" alt="logoArgentino" />
           <h2 class="nombre-header-page">Argentinaᴬᴿ</h2></a>
-          <div class="navbar"><i class="fa fa-bars"></i></div>
-  
-        <nav class="secciones-header">
-          <ul>
-            <li><a class="otros-sitios" href="../index.html">Inicio</a></li>
-            <li>
-              <a class="otros-sitios" href="../pages/Plantilla.html">Plantilla</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link otros-sitios" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  otros-sitios" href="../pages/plantilla.html">Plantilla</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link otros-sitios" href="../pages/galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link otros-sitios" href="#">Tienda</a>
             </li>
-            <li>
-              <a class="otros-sitios" href="../pages/galeria.html">Galeria</a>
+            <li class="nav-item">
+              <a class="nav-link otros-sitios" href="../pages/contacto.html">Contacto</a>
             </li>
-            <li><a class="otros-sitios" href="">Tienda</a></li>
-            <li>
-              <a class="otros-sitios" href="../pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        </ul>
+
+        <div class="carrito">
+          <button type="button" class="boton-compra" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        
+      </div>
+        
+      </div>
+    </nav>
+</header>
       <!-- FIN DEL HEADER -->
 
      <!-- INTRO DEL A TIENDA -->
-      <section class="contenedor-img">
-        
-       <div class="titulo-en-img">
-        <h1>Nuestro Kit 2020/2021 (pronto el 2021/2022 👀)</h1>
-        <span class="botton-en-img"><strong>Explorar Productos</strong></span>
-       </div>
-       
-      </section>
+     <section class="container-img">
+      <img src="../images/img-inicio-tienda/fondo.jpg" alt="">
+      <div class="titulo-en-img">
+          <h1>Nuestro Kit 2020/2021 (pronto el 2021/2022 👀)</h1>
+          <a href="#tienda"><span class="botton-en-img"><strong>Explorar Productos</strong></span></a>
+         </div>
+  </section>
+     
+    </section>
 
-      <main>
-       <div class="productos-referencia">
-        <h2>Algunos de nuestros jugadores con indumentarias de la seleccion</h2>
-        <img src="../images/img-inicio-tienda/img-jugadores-tienda.jpg" alt="">
-       </div>
-       <!-- FIN DE LA INTRO DE LA TIENDA -->
-  
-       <!-- TIENDA -->
-      <section class="nuestra-tienda-contenedor">
-        <div class="titulo-tienda">
-          <h2>Nuestros Productos</h2>
+    <main class="container-fluid">
+      <div class="row">
+     <div class="productos-referencia  container-fluid">
+      <h2 class=" col-lg-12 ">Algunos de nuestros jugadores con indumentarias de la seleccion</h2>
+      <img  class="col-lg-12" src="../images/img-inicio-tienda/img-jugadores-tienda.jpg" alt="">
+  </div>
+     </div>
+     <!-- FIN DE LA INTRO DE LA TIENDA -->
+
+     <!-- TIENDA -->
+    <section class="nuestra-tienda-contenedor container-fluid" id="tienda">
+      
+      <div class="titulo-tienda">
+        <h2>Nuestros Productos</h2>
+      </div>
+
+      <div class="contenedor-tienda ">
+          <div class="row">
+        <div class="cards-tienda-productos col-lg-4 col-sm-12 col-md-6">
+          <div class="contenedor-img-tienda">
+          <img src="../images/img-producto-tienda/img-producto1.jpg" alt=""></div>
+          <h3>Campera Anthem Selección Argentina</h3>
+          <h3>$18.999</h3>
+          <a href="">Añadir al carrito</a>
         </div>
-        <div class="contenedor-tienda">
-          <div class="cards-tienda-productos">
-            <div class="contenedor-img-tienda">
-            <img src="../images/img-producto-tienda/img-producto1.jpg" alt=""></div>
-            <h3>Campera Anthem Selección Argentina</h3>
-            <h3>$18.999</h3>
-            <a href="">Comprar</a>
+        
+      
+        
+          <div class="cards-tienda-productos col-lg-4 col-sm-12 col-md-6">
+            <img src="../images/img-producto-tienda/img-producto2.jpg" alt="">
+            <h3>Buzo Entrenamiento Argentina</h3>
+            <h3>$14.999</h3>
+            <a href="">Añadir al carrito</a>
 
           </div>
           
-            <div class="cards-tienda-productos">
-              <img src="../images/img-producto-tienda/img-producto2.jpg" alt="">
-              <h3>Buzo Entrenamiento Argentina</h3>
-              <h3>$14.999</h3>
-              <a href="">Comprar</a>
+            <div class="cards-tienda-productos col-lg-4 col-sm-12 col-md-6">
+              <img src="../images/img-producto-tienda/img-producto3.jpg" alt="">
+              <h3> Gorra Selección Argentina (UNISEX)</h3>
+              <h3>$2.599</h3>
+              <a href="">Añadir al carrito</a>
   
             </div>
             
-              <div class="cards-tienda-productos">
-                <img src="../images/img-producto-tienda/img-producto3.jpg" alt="">
-                <h3> Gorra Selección Argentina (UNISEX)</h3>
-                <h3>$2.599</h3>
-                <a href="">Comprar</a>
+              <div class="cards-tienda-productos col-lg-4 col-sm-12 col-md-6">
+                <img src="../images/img-producto-tienda/img-producto4.jpg" alt="">
+                <h3>Pantalón 3/4 Argentina</h3>
+                <h3>$11.499</h3>
+                <a href="">Añadir al carrito</a>
     
               </div>
               
-                <div class="cards-tienda-productos">
-                  <img src="../images/img-producto-tienda/img-producto4.jpg" alt="">
-                  <h3>Pantalón 3/4 Argentina</h3>
-                  <h3>$11.499</h3>
-                  <a href="">Comprar</a>
+                <div class="cards-tienda-productos col-lg-4 col-sm-12 col-md-6">
+                  <img src="../images/img-producto-tienda/img-producto5.jpg" alt="">
+                  <h3>Camiseta Entrenamiento Argentina</h3>
+                  <h3>$9.999</h3>
+                  <a href="">Añadir al carrito</a>
       
                 </div>
-                
-                  <div class="cards-tienda-productos">
-                    <img src="../images/img-producto-tienda//img-producto5.jpg" alt="">
-                    <h3>Camiseta Entrenamiento Argentina</h3>
-                    <h3>$9.999</h3>
-                    <a href="">Comprar</a>
+           
+                  <div class="cards-tienda-productos col-lg-4 col-sm-12 col-md-6">
+                    <img src="../images/img-producto-tienda/img-producto6.jpg" alt="">
+                    <h3>Campera Presentación Argentina</h3>
+                    <h3>$17.999</h3>
+                    <a href="">Añadir al carrito</a>
         
                   </div>
-             
-                    <div class="cards-tienda-productos">
-                      <img src="../images/img-producto-tienda/img-producto6.jpg" alt="">
-                      <h3>Campera Presentación Argentina</h3>
-                      <h3>$17.999</h3>
-                      <a href="">Comprar</a>
-          
-                    </div>
-                    <div class="cards-tienda-productos">
-                      <img src="../images/img-producto-tienda/img-producto7.jpg" alt="">
-                      <h3>Short Adiddas De Argentina - Azul</h3>
-                      <h3>$9.999</h3>
-                      <a href="">Comprar</a>
-          
-                    </div>
-                    <div class="cards-tienda-productos">
-                      <img src="../images/img-producto-tienda/img-producto8.jpg" alt="">
-                      <h3>Campera Argentina Uniforia Anthem</h3>
-                      <h3>$24.999</h3>
-                      <a href="">Comprar</a>
-          
-                    </div>
-        </div>
-        <!-- FIN DE TIENDA -->
-      </section>
+                  <div class="cards-tienda-productos col-lg-4 col-sm-12 col-md-6">
+                    <img src="../images/img-producto-tienda/img-producto7.jpg" alt="">
+                    <h3>Short Adiddas De Argentina - Azul</h3>
+                    <h3>$9.999</h3>
+                    <a href="">Añadir al carrito</a>
+        
+                  </div>
+                  <div class="cards-tienda-productos col-lg-4 col-sm-12 col-md-6">
+                    <img src="../images/img-producto-tienda/img-producto8.jpg" alt="">
+                    <h3>Campera Argentina Uniforia Anthem</h3>
+                    <h3>$24.999</h3>
+                    <a href="">Añadir al carrito</a>
+        
+                  </div>
+      </div>
+  </div> 
 
       </main>
+
+      <!-- FIN DE TIENDA -->
       
+      <!-- Modal DE TIENDA -->
+<div class="modal fade md-" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Carrito De Compras</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card-model">
+          <div class="row">
+            <div class="col-md-5 align-content-center">
+              <img src="../images/img-producto-tienda/img-producto1.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+              <div class="card-descripcion">
+                <h5 class="card-title">Camiseta Entrenamiento Argentina</h5>
+                <p class="card-text">Precio: $9.999</p>
+                <p class="card-text">Talles:</p>
+                <ul class="talles-lista">
+                  <li>XS</li>
+                  <li>S</li>
+                  <li>M</li>
+                  <li>L</li>
+                  <li>XL</li>
+                </ul>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Realizar Compra</button>
+        <button type="button" class="btn btn-primary">Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
       <!-- INCIIO FOOTER -->
       <footer>
      
@@ -162,5 +233,9 @@
               </div>
       </footer>
       <!-- FIN FOOTER -->
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>

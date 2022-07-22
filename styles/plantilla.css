@@ -81,6 +81,7 @@ body{
     margin-right: 10px;
     background-color: rgb(190, 228, 243);
     box-shadow: 2px 4px 10px black;
+    margin-bottom: 30px;
 
     
 }
@@ -112,8 +113,9 @@ body{
     text-align: justify;
     font-weight: 200px;
     justify-content: flex-end;
-    font-size: 19px;
+    font-size: 20px;
 }
+
 
 .lista-equipo ul .card-jugador:hover .datos-jugador h3 {  
     text-decoration: underline;
