@@ -1,132 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Poppins:ital,wght@0,400;0,800;1,100;1,200;1,400;1,500&family=Roboto+Condensed:wght@300&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body{
-  font-family: 'Poppins';
+font-family: 'Poppins';
 }
 
-.container-img{
+/* carrito de tienda */
+.carrito{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
     width: auto;
-    height: auto;
- }
- .container-img img{
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
- }
- 
- .container-img .titulo-en-img{
-    float: left;
-    padding-left: 0;
-    text-transform: uppercase;
-    text-align: center;
-    width: 50%;
-    top: 15%;
-    position: absolute;
- }
- 
- .container-img .titulo-en-img h1{
-   padding-right: 15px;
-   margin-left: 10px;
-   font-size: 20px;
-   margin-bottom: 20px;
-   padding-top: 15%;
-   
- }
- 
- .container-img .titulo-en-img span{
-     font-size: 15px;
-     border-radius: 10px;
-     overflow: hidden;
-     background-color: #1bbfd4;
-     padding: 10px;
-     color: rgb(9, 8, 8);
-     transition: all 0.9s; 
-     cursor: pointer;  
- }
- .container-img .titulo-en-img span:hover{  
-     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
- }
- .productos-referencia h2{
-     text-align: center;
-     padding: 10px;
-     margin-top: 20px;
-     margin-bottom: 20px;
-     color: #00BCD4;
-     font-size: 35px;
- }
- .productos-referencia img{
-     width: 100%;
-     height: auto;
-     object-fit: cover;
- }
- 
- /* FIN DE LA INTRO A LA TIENDA */
- 
- /* INICIO DELA TIENDA */
- .nuestra-tienda-contenedor{
-    height: auto;
- 
- }
- 
- .nuestra-tienda-contenedor .titulo-tienda h2{
-   margin: 20px;
-   padding: 10px;
-   font-size: 35px;
-   position: relative;
-   color:#00BCD4
- }
- 
- .nuestra-tienda-contenedor .contenedor-tienda{
-     margin: 10px;
-     padding: 60px;
- }
- 
- .nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos{
-     text-align: center;
-     line-height: 25px;
-     margin-bottom:70px ;
-     transition: all 0.9s;
-     overflow: hidden;  
- }
- 
- .nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos:hover{
-     transform: scale(1.1);
- }
- 
- .cards-tienda-productos img{
-     height: 300px;
-     margin-bottom: 25px;
- }
- 
- .cards-tienda-productos h3{
-     color: #00BCD4;
-     letter-spacing: 1px;
-     font-size: 18px;
-     margin-bottom: 5px;
-     
- }
- 
- .cards-tienda-productos a{
-     text-decoration: none;
-     color: gray;
-     font-weight: 500px;
-     font-size:20px ;   
- }
- 
+}
 
- img{
+.carrito .boton-compra{
+    margin-right: 50px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: #042240;
+    border: white 1px solid;
+    transition: all 0.9s;
+    border-radius: 10px;  
+}
+
+.carrito .boton-compra:hover{ 
+    color:#00BCD4 ;
+    border: #00BCD4 1px solid;
+}
+/* fin carrito de tienda  */
+
+/* modal de tienda */
+.card-model{
+    max-width: 500px;
+}
+/* fin del modal de tienda */
+
+/* slider banner tienda */
+
+.slider-tienda {
+	width: 100%;
+    height: auto;
+	overflow: hidden;
+}
+
+.slider-tienda .slider-tienda-tienda-responsive img{
+    height: 200px;
+}
+
+
+.slider-tienda ul {
+	display: flex;
+	padding: 0;
+	width:400%;
+	animation: slide 20s infinite ease alternate;
+}
+
+.slider-tienda li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-tienda img {
+	width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+/* fin slider banner */
+
+
+
+.productos-referencia h2{
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #00BCD4;
+    font-size: 35px;
+}
+.productos-referencia img{
+    width:100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+ /* FIN DE LA INTRO A LA TIENDA */
+
+ /* INICIO DE LA TIENDA */
+.nuestra-tienda-contenedor{
+    height: auto;
+
+}
+
+.nuestra-tienda-contenedor .titulo-tienda h2{
+margin: 20px;
+padding: 10px;
+font-size: 35px;
+position: relative;
+color:#00BCD4
+}
+
+.nuestra-tienda-contenedor .contenedor-tienda{
+    margin: 15px;
+    padding-top: 20px;
+    padding: 60px;
+    height: auto;
+    
+}
+
+.nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos{
+    text-align: center;
+    line-height: 25px;
+    margin-bottom:70px ;
+    transition: all 0.9s;
+    overflow: hidden;  
+}
+
+.nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos:hover{
+    transform: scale(1.1);
+}
+
+.cards-tienda-productos img{
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+.cards-tienda-productos h3{
+    color: #00BCD4;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+}
+
+.cards-tienda-productos a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500px;
+    font-size:20px ;   
+}
+
+
+img{
     height: 185px;
 
 }
-
-
-
 
 .col-md-8{
     justify-content: flex-end;
@@ -147,50 +185,80 @@ body{
 }
 
 .talles-lista li:hover{
- background-color: white;
+background-color: white;
     cursor: pointer;
 }
 
- @media only screen and (min-width:440px) and (max-width:600px){
-  
-     .container-img .titulo-en-img h1{
-         font-size: 14px;
-         font-weight: 700;
-         padding-top: 15px;
-     }
-     .container-img .titulo-en-img span{
-         font-size: 10px;
-         padding: 5px;
-         
-     }
- 
-     .productos-referencia h2{
-         text-align: center;
-         font-size: 20px;
-     }
-     .nuestra-tienda-contenedor .titulo-tienda h2{
-         font-size: 20px;
-     }
-     .cards-tienda-productos img{
-         height: 240px;
-         margin-bottom: 25px;
-     }
-     .cards-tienda-productos h3{
-         font-size: 16px;
-     }
-     .cards-tienda-productos a{
-         font-size: 14px;
-     }
+@media only screen and (min-width:320px) and (max-width:440px){
+    
+    
+    
+    
+    .titulo-en-img{
+        visibility: hidden; /* oculto mientras */
+    }
+    .container-img .titulo-en-img h1{
+        font-size: 10px;
+        font-weight: 700;
+        padding-top: 15px;
+        margin: 0;
+    }
+    .container-img .titulo-en-img span{
+        font-size: 8px;
+        padding: 5px;  
+    }
+
+    .productos-referencia h2{
+        text-align: center;
+        font-size: 12px;
+    }
+    .nuestra-tienda-contenedor .titulo-tienda h2{
+        font-size: 12px;
+    }
+    .nuestra-tienda-contenedor .contenedor-tienda{
+        padding: 0;
+    }
+
+    .nuestra-tienda-contenedor .contenedor-tienda .cards-tienda-productos{
+        margin-bottom: 15px;
+    }
+    .cards-tienda-productos img{
+        height: 120px;
+        margin-bottom: 25px;
+    }
+    .cards-tienda-productos h3{
+        font-size: 10px;
+    }
+    .cards-tienda-productos a{
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width:440px) and (max-width:600px){
+ .titulo-en-img{
+    visibility: hidden; /* oculto mientras */
  }
+    
+    .productos-referencia h2{
+        text-align: center;
+        font-size: 20px;
+    }
+    .nuestra-tienda-contenedor .contenedor-tienda{
+        padding: 0;
+    }
+    .nuestra-tienda-contenedor .titulo-tienda h2{
+        font-size: 20px;
+    }
+    .cards-tienda-productos img{
+        height: 180px;
+        margin-bottom: 25px;
+    }
+    .cards-tienda-productos h3{
+        font-size: 14px;
+    }
+    .cards-tienda-productos a{
+        font-size: 12px;
+    }
+}
 
 /* FIN DE LA TIENDA */
-
-
-
-
-
-
-
-
-    
-   
