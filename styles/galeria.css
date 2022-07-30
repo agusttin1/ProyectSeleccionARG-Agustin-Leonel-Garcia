@@ -17,7 +17,7 @@ margin: 20px;
   padding: 10px;
   font-size: 35px;
   position: relative;
-  color:#00BCD4
+  color:#00BCD4;
 }
 
 
@@ -98,7 +98,60 @@ grid-column: 3/4;
 
 /* GALERIA RESPONSIVE */
 
- @media only screen and (min-width:500px) and (max-width:800px){
+@media only screen and (min-width:320px) and (max-width:500px){
+  .head-pics h2{
+    margin: 20px;
+      padding: 10px;
+      font-size: 22px;
+      position: relative;
+      color:white;
+    }
+  
+  
+  
+  .cont-de-img{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .cont-de-img .box-img:nth-child(1){
+    grid-column: 1/5;
+  }
+  
+  .cont-de-img .box-img:nth-child(2){
+    grid-column: 1/5;
+  }
+  
+  .cont-de-img .box-img:nth-child(3){
+    grid-column: 1/5;
+  }
+  .cont-de-img .box-img:nth-child(4){
+    grid-column: 1/5;
+  }
+  .cont-de-img .box-img:nth-child(5){
+    grid-column: 1/5;
+  }
+  .cont-de-img .box-img:nth-child(6){
+    grid-column: 1/5;
+  }
+  
+  .cont-de-img .box-img img{
+    height: 120px;
+  }
+
+  .head-vids h2{
+    font-size: 22px;
+  }
+  .cont-de-vid{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cont-de-vid iframe{
+    height: 150px;
+    width: 200px;
+  }
+}
+@media only screen and (min-width:500px) and (max-width:800px){
     
   body{
     margin: 0;
@@ -254,7 +307,7 @@ grid-column: 3/4;
     }
 
     .cont-de-vid iframe{
-      width: 280;
+      width: 300px;
       margin: 0;
       padding: 0;
     } 

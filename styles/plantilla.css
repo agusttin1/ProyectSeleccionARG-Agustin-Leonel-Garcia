@@ -41,7 +41,7 @@ body{
     margin: 25px;
 }
 
-.container-equipo .titulo h2{
+.head-title-equipo{
     margin: 20px;
   padding: 10px;
   font-size: 35px;
@@ -137,6 +137,120 @@ body{
 }
 
 
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+   width: 40px;
+   height: 40px;
+    border-radius: 100%;
+    top: 90%;
+    transform: translateY(-50%);
+    background-color: #00BCD4;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+   
+    
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    padding-top: 40px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:600px){
+
+.contenedor-titulo h1{
+    font-size: 25px;
+}
+.carousel-inner{
+    padding: 20px;
+}
+
+
+
+.head-title-equipo{
+        font-size: 22px;
+    }
+    .lista-equipo ul{
+        display: flex;
+        justify-content:center;
+    }
+
+    .lista-equipo ul .card-jugador{
+        margin: 10px;
+        width: 200px;
+    }
+
+    .lista-equipo ul .card-jugador:hover{ 
+        transform:none; 
+    }
+
+    .lista-equipo ul .card-jugador img{
+        height: 130px;
+    }
+
+    .lista-equipo ul .card-jugador .datos-jugador {
+        padding: 10px;
+    }
+
+    .lista-equipo ul .card-jugador .datos-jugador h3{
+        font-size: 17px;
+    }
+
+    .lista-equipo ul .card-jugador .datos-jugador .numero-casaca{
+        margin-right: 0px;
+    
+        font-size: 40px;
+    }
+
+}
+@media only screen and  (min-width:600px) and (max-width:768px){
+
+    .head-title-equipo{
+        font-size: 26px;
+    }
+    .lista-equipo ul{
+        display: flex;
+        justify-content:center;
+    }
+
+    .lista-equipo ul .card-jugador{
+    margin-right: 0;
+    margin-left: 0;
+        width: 220px;
+    }
+
+    .lista-equipo ul .card-jugador:hover{ 
+        transform:none; 
+    }
+
+    .lista-equipo ul .card-jugador img{
+        height: 180px;
+    }
+
+    .lista-equipo ul .card-jugador .datos-jugador {
+        padding: 10px;
+    }
+
+    .lista-equipo ul .card-jugador .datos-jugador h3{
+        font-size: 18px;
+    }
+
+    .lista-equipo ul .card-jugador .datos-jugador .numero-casaca{
+        margin-right: 0px;
+    
+        font-size: 45px;
+    }  
+
+    .carousel-control-prev,
+.carousel-control-next{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+}
 
 
 
