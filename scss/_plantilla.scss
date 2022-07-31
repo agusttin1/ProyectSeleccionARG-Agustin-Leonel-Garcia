@@ -46,7 +46,7 @@ body{
   padding: 10px;
   font-size: 35px;
   position: relative;
-  color:#00BCD4;
+  color:$color1;
   font-weight: 800;
 }
 
@@ -88,7 +88,7 @@ body{
 
 .lista-equipo ul .card-jugador:hover{ 
     
-    background-color:skyblue;
+    background-color:$color3;
     transform:scale(1.1) 
 
 }
@@ -126,7 +126,7 @@ body{
 
 .lista-equipo ul .card-jugador .datos-jugador .numero-casaca{
     margin-right: 10px;
-    color: skyblue;
+    color:$color3;
     font-weight: 800;
     font-size: 50px;
 }
@@ -145,7 +145,7 @@ body{
     border-radius: 100%;
     top: 90%;
     transform: translateY(-50%);
-    background-color: #00BCD4;
+    background-color: $color1;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -251,16 +251,5 @@ body{
     margin-right: 70px;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* FIN DEL CONTENEDOR DEL EQUIPO */

@@ -1,3 +1,7 @@
+$color1: #00BCD4;
+$color2:#042240;
+$color3:skyblue;
+
 @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Poppins:ital,wght@0,400;0,800;1,100;1,200;1,400;1,500&family=Roboto+Condensed:wght@300&display=swap');
 
 * {
@@ -14,7 +18,7 @@ body{
 /* INCIO DEL HEADER */
 
 header{
-  background-color: #042240;
+  background-color: $color2;
 
 }
 
@@ -59,7 +63,7 @@ header{
 }
 
 .otros-sitios:hover{
-    border-bottom: 1px #00BCD4 solid;
+    border-bottom: 1px $color1 solid;
 }
 
 
@@ -79,7 +83,7 @@ header{
   text-align: center;
   padding: 50px;
   margin: 0;
-  color:#00BCD4;
+  color:$color1;
 }
 
 .video-inicio video {
@@ -108,7 +112,7 @@ header{
   padding: 10px;
   font-size: 35px;
   position: relative;
-  color:#00BCD4;
+  color:$color1;
   font-weight: 800;
 }
 
@@ -149,7 +153,7 @@ header{
 .contenedor-noticias .card-noticias h4 {
   font-weight: 600;
   padding: 10px;
-  color: #00BCD4;
+  color: $color1;
 }
 
 .contenedor-noticias .card-noticias p {
@@ -282,7 +286,7 @@ display: flex;
 
 /* FOOTTER INICIO */
 footer{
-  background-color: #042240;
+  background-color: $color2;
   color:white;
   width: 100%;
   padding-top: 40px;
@@ -655,3 +659,9 @@ padding-top: 20px;
   font-size: 16px;
 }
 }
+
+
+@import "_plantilla.scss";
+@import "_galeria.scss";
+@import "_tienda.scss";
+@import "_contacto.scss";

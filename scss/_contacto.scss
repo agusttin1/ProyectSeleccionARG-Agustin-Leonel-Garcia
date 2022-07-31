@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body{
+.body-contacto{
   background: linear-gradient(95deg, #4ba9e9 , #4ba9e9 50% ,#fff 50%,#fff 100%);
   font-family: 'Poppins';
 }
@@ -82,7 +82,7 @@ margin-bottom: 60px;
   border: none;
   background: none;
   padding: 10px;
-  border-bottom: 2px solid skyblue;
+  border-bottom: 2px solid $color3;
 }
 
 .formulario-contacto label{
@@ -93,7 +93,7 @@ margin-bottom: 60px;
 
 .formulario-contacto button{
   border:0;
-  background-color: skyblue;
+  background-color: $color3;
   text-transform: uppercase;
   padding: 15px;
   transition: all 0.5s;
@@ -147,7 +147,6 @@ margin-bottom: 60px;
       width: 90%;
    
       padding: 10px;
-      border-bottom: 2px solid skyblue;
     }
     
     .formulario-contacto label{
@@ -207,14 +206,10 @@ margin-bottom: 60px;
 }
 
 @media only screen and (min-width:800px) and (max-width:1000px){
-  
-  .grid{
-    grid-template-rows: repeat(1,150px);
-    grid-template-columns: 1fr;
-  }
+ 
   
   .mensaje-contacto{
-    grid-column: 1/1;
+
     margin: 0;
     margin-top: 80px;
     width: 95%;
@@ -228,7 +223,7 @@ margin-bottom: 60px;
   }
 
   .formulario-contacto{
-    grid-column: 1/1;
+    
     width:80%;
     margin-left: 60px;
     display: flex;

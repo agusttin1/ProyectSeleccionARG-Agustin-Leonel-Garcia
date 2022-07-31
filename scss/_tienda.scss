@@ -24,15 +24,15 @@ font-family: 'Poppins';
     padding-left: 15px;
     padding-right: 15px;
     color: white;
-    background-color: #042240;
+    background-color: $color2;
     border: white 1px solid;
     transition: all 0.9s;
     border-radius: 10px;  
 }
 
 .carrito .boton-compra:hover{ 
-    color:#00BCD4 ;
-    border: #00BCD4 1px solid;
+    color:$color1;
+    border: $color1 1px solid;
 }
 /* fin carrito de tienda  */
 
@@ -95,7 +95,7 @@ font-family: 'Poppins';
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #00BCD4;
+    color: $color1;
     font-size: 35px;
 }
 .productos-referencia img{
@@ -117,7 +117,7 @@ margin: 20px;
 padding: 10px;
 font-size: 35px;
 position: relative;
-color:#00BCD4
+color:$color1;
 }
 
 .nuestra-tienda-contenedor .contenedor-tienda{
@@ -146,7 +146,7 @@ color:#00BCD4
 }
 
 .cards-tienda-productos h3{
-    color: #00BCD4;
+    color: $color1;
     letter-spacing: 1px;
     font-size: 18px;
     margin-bottom: 5px;
@@ -178,8 +178,8 @@ img{
 
 .talles-lista li{
     border-radius: 5px;
-    border: #00BCD4 2px solid;
-    background-color: #00BCD4;
+    border: $color1 2px solid;
+    background-color: $color1;
     color: black;
     padding: 5px;
 }
